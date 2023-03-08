@@ -1,1 +1,103 @@
 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+
+}
+
+main {
+    background: #EBEBEB;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 10rem;
+
+    height: 100px;
+    background: #FFF159;
+}
+
+.buscar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-inline: 1rem;
+}
+
+.input-buscar {
+    padding-left:3rem;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+}
+.navbar-list{
+    width: 1010px;
+    display: flex;
+    justify-content:space-between ;
+    padding-left:8rem;
+}
+
+a > img{
+    width: 100vw;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0px;
+    right: 0px;
+    padding-inline: 6rem;
+}
+
+.pagos {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1184px;
+    height: 90px;
+    margin-block: 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    
+}
+
+.ofertas {
+    position: relative;
+    padding-block: 1rem;
+}
+
+.list-cards {
+    display: flex;
+    flex-direction:row;    
+    
+}
+
+.card {
+    height: 350px;
+    display: flex;
+    flex-direction:column;
+    margin-right: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
