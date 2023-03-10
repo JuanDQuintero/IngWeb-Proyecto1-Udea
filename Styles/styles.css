@@ -9,7 +9,8 @@
 body {
     height: auto;
     width: 100vw;
-
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 main {
@@ -17,22 +18,24 @@ main {
 }
 
 header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-inline: 10rem;
-
     height: 100px;
     background: #FFF159;
 }
 
-.buscar {
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 12px;
+    padding-inline: 13rem;
+}
+
+ .buscar {
     display: flex;
     justify-content: start;
     align-items: center;
     margin-inline: 1rem;
-}
+} 
 
 .input-buscar {
     padding-left:3rem;
@@ -59,12 +62,7 @@ a > img{
 }
 
 .products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    left: 0px;
-    right: 0px;
-    padding-inline: 6rem;
+    padding-inline: 13rem;
 }
 
 .pagos {
@@ -72,9 +70,8 @@ a > img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 1184px;
     height: 90px;
-    margin-block: 2rem;
+    margin-top: 2rem;
     background: #FFFFFF;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -83,13 +80,16 @@ a > img{
 
 .ofertas {
     position: relative;
-    padding-block: 1rem;
+    padding-block: 2rem;
 }
 
+.ofertas > h2 {
+    padding-bottom: 1rem;
+}
 .list-cards {
     display: flex;
-    flex-direction:row;    
-    
+    flex-direction:row;   
+    width: 100%; 
 }
 
 .card {
@@ -101,3 +101,161 @@ a > img{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
+
+.suscripcion {
+    margin-top: 3.5rem;
+    background-color: #FFFFFF;
+    height: 340px;
+    border-radius: 6px;
+}
+
+.suscripcion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    height: 87px;
+    padding-inline: 1.5rem;
+    border-radius: 6px 6px 0px 0px;
+    background: linear-gradient(90deg, #A90F90 55%, #0C1A51 100%);}
+
+.suscripcion-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.suscripcion-container {
+    padding: 1.5rem;
+}
+
+
+
+.suscripcion-election {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+}
+
+.suscripcion-tipos {
+    display: flex;
+    
+} 
+.suscripcion-tipos > p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.suscripcion-button {
+    display: flex;
+    justify-content: end;
+    padding: 1.5rem;
+    border-top: 1px solid #EDEDED;
+}
+
+.list-puntos {
+    display: flex;
+}
+
+.card-puntos {
+    padding-right: 1rem;
+}
+.card-puntos > img {
+    border-radius: 4px;
+}
+
+.mercado-puntos{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section{
+    display: flex;
+    align-items: center;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+}
+
+.title-section > a {
+    padding-left: 1rem;
+    align-self: end;
+}
+
+.title-section > h2 {
+    font-size: 25px;
+    font-style: normal;
+    line-height: 31px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.descubre-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descubre  > h2 {
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+}
+
+.tiendas-list {
+    display: flex;
+}
+
+.tiendas > h2 {
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+}
+
+.items-tiendas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 284px;
+    height: 340px;
+    margin-right: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px -1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.items-tiendas > img {
+    position: absolute;
+    height: 95px;
+    transform: translateY(50%);
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.1), 0px -1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.background-tienda {
+    width: 284px;
+    height: 95px;
+
+}
+
+.product-container > h3 {
+    padding-bottom: 1rem;
+}
+
+.product-container > a {
+    padding-top: 1rem;
+}
+
+.product-container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+

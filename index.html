@@ -9,34 +9,37 @@
 </head>
 <body>  
     <header>
-        <div class="buscar">
+        <nav>
             <div class="logo">
-                <img src="/resources/a.png" alt="logo">
+                <img src="/resources/logo.png" alt="logo">
             </div>     
             <div class="input-buscar">
                 <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Default input</label>
                 <input type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <button>Buscar</button>
             </div>
-        </div>
-        <div class="navbar">
-            <a>Ingresar</a>
-            <div class="navbar-list">
-                <ul>Categorias</ul>
-                <span>Ofertas</span>
-                <span>Historial</span>
-                <span>Supermercado</span>
-            </div>
             
-        </div>
+            </div>
+            <div class="navbar">
+                <a>Ingresar</a>
+                <div class="navbar-list">
+                    <ul>Categorias</ul>
+                    <span>Ofertas</span>
+                    <span>Historial</span>
+                    <span>Supermercado</span>
+                </div>
+                
+            </div>
+        </nav>
+
         
     </header>     
     <main> 
         <section class="novedades">
-            <a href="/novedades"><img src="/resources/D_NQ_964867-MLA53990832632_022023-OO.webp.png"></a>
+            <a href="/novedades"><img src="/resources/novedades.png"></a>
         </section>
-        <section class="products">
-            <div class="pagos">
+        <article class="products">
+            <section class="pagos">
                 <div class="cuotas">
                     <p>Hasta 48 cuotas</p>
                     <a>Ver más</a>
@@ -53,38 +56,175 @@
                     <p>Más medios de pago</p>
                     <a>Ver más</a>
                 </div>
-            </div>
-            <div class="ofertas">
-                <h2>Ofertas</h2>
+            </section>
+            <section class="ofertas">
+                <div class="title-section">
+                    <h2>Ofertas</h2>
+                </div>
                 <div class="list-cards">
                     <div class="card">
-                        <img src="/resources/D_Q_NP_860239-MCO53303445677_012023-AB.webp.png" alt="cuotas">
+                        <img src="/resources/silla.png" alt="silla">
                         <span>$210.900</span>
                         <p>Envió gratis</p>
                     </div>
                     <div class="card">
-                        <img src="/resources/D_Q_NP_677257-MCO51484842665_092022-AB.webp.png" alt="cuotas">
+                        <img src="/resources/microfono.png" alt="microfono">
                         <span>$74.990</span>
                         <p>Envió gratis</p>
                     </div>
                     <div class="card">
-                        <img src="/resources/D_Q_NP_906123-MCO52701128591_122022-AB.webp.png" alt="cuotas">
-                        <span>$74.990</span>
+                        <img src="/resources/afeitadora.png" alt="afeitadora">
+                        <span>$134.950</span>
                         <p>Envió gratis</p>
                     </div>
                     <div class="card">
-                        <img src="/resources/D_Q_NP_656308-MCO53229220832_012023-AB.webp.png" alt="cuotas">
-                        <span>$74.990</span>
+                        <img src="/resources/armario.png" alt="armario">
+                        <span>$149.900</span>
                         <p>Envió gratis</p>
                     </div>
                     <div class="card">
-                        <img src="/resources/D_Q_NP_745665-MCO52355896236_112022-AB.webp.png" alt="cuotas">
-                        <span>$74.990</span>
+                        <img src="/resources/cortina.png" alt="cortina">
+                        <span>$69.990</span>
                         <p>Envió gratis</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="suscripcion">
+                <div class="suscripcion-header">
+                    <h2>Suscríbete al nivel 6</h2>
+                    <div class="suscripcion-price">
+                        <span>$ 50.690</span>
+                        <span>$ 17.899<span>/mes</span></span>
+                    </div>
+                    
+                </div>
+                <div class="suscripcion-container">
+                    <p>Consigue los mejores beneficios en Mercado Libre</p>
+                    <div class="suscripcion-election">
+                        <div class="suscripcion-tipos">
+                            <img src="/resources/disney.png" alt="">
+                            <p>Disney+ sin cargo</p>
+                        </div>
+                        <div class="suscripcion-tipos">
+                            <img src="/resources/starplus.svg.png" alt="">
+                            <p>Star+ sin cargo</p>
+                        </div>
+                        <div class="suscripcion-tipos">
+                            <img src="/resources/truck.png" alt="">
+                            <p>Envíos gratis y rápidos desde $<br>
+                                90.000 y 40% OFF en envíos de<br>
+                                menos de $ 90.000
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="suscripcion-button">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </section>
+            <section class="mercado-puntos">
+                <div class="title-section">
+                    <h2>Beneficios de Mercado Puntos</h2>
+                    <a>Ver todos los beneficios</a>
+                </div>   
+                <div class="list-puntos">
+                    <div class="card-puntos">
+                        <img src="/resources/puntoslvl6.png" alt="">
+                    </div>
+                    <div class="card-puntos">
+                        <img src="/resources/puntosHBO.png" alt="">
+                    </div>
+                    <div class="card-puntos">
+                        <img src="/resources/puntosParamount.png" alt="">
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="descubre">
+                <div class="title-section">
+
+                    <h2>Descubre</h2>
+                </div>
+                <div class="descubre-list">
+                    <div class="items-list">
+                        <img src="/resources/descubre1.png" alt="">
+                    </div>
+                    <div class="items-list">
+                        <img src="/resources/descubre2.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="tiendas">
+                <div class="title-section">
+                    <h2>Las mejores tiendas te esperan</h2>
+                    <a>Ver tiendas</a>
+                </div>   
+                <div class="tiendas-list">
+                    <div class="items-tiendas">
+                        <div class="background-tienda">
+                            <img src="/resources/legoback.png" alt="">
+                        </div>
+                        <img src="/resources/D_Q_NP_834882-MLA25716447036_062017-AE.webp.png" alt="">
+                        <div class="product-container">
+                            <h3>Lego</h3>
+                            <div class="product-items">
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                            </div>
+                            <a href="/">Ver tienda</a>
+                        </div>
+                        
+                    </div>
+                    <div class="items-tiendas">
+                        <div class="background-tienda">
+                            <img src="/resources/xiaomiback.png" alt="">
+                        </div>
+                        <img src="/resources/D_Q_NP_834882-MLA25716447036_062017-AE.webp.png" alt="">
+                        <div class="product-container">
+                            <h3>Xiaomi</h3>
+                            <div class="product-items">
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                            </div>
+                            <a href="/">Ver tienda</a>
+                        </div>
+                    </div>
+                    <div class="items-tiendas">
+                        <div class="background-tienda">
+                            <img src="/resources/osterback.png" alt="">
+                        </div>
+                        <img src="/resources/D_Q_NP_834882-MLA25716447036_062017-AE.webp.png" alt="">
+                        <div class="product-container">
+                            <h3>Oster</h3>
+                            <div class="product-items">
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                            </div>
+                            <a href="/">Ver tienda</a>
+                        </div>
+                    </div>
+                    <div class="items-tiendas">
+                        <div class="background-tienda">
+                            <img src="/resources/nikonback.png" alt="">
+                        </div>
+                        <img src="/resources/D_Q_NP_834882-MLA25716447036_062017-AE.webp.png" alt="">
+                        <div class="product-container">
+                            <h3>Nikon</h3>
+                            <div class="product-items">
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                                <a href="/product"></a><img src="/resources/moto.png" alt=""></a>
+                            </div>
+                            <a href="/">Ver tienda</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </article>
         
         
     </main>
