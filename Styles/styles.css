@@ -1,19 +1,46 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 body {
     height: auto;
     width: 100vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', normal;
     font-weight: 400;
+
 }
 
 main {
     background: #EBEBEB;
 }
+
+.title-section{
+    display: flex;
+    align-items: center;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+}
+
+.title-section > a {
+    padding-left: 1.3rem;
+    color: #3483FA;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.title-section > h2 {
+
+    font-weight:300;
+    font-size: 25px;
+    line-height: 31px;
+    color: #666666;
+}
+
+/* Sección header*/
 
 header {
     height: 100px;
@@ -21,12 +48,9 @@ header {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: 1fr 6fr 3fr;
-    column-gap: 52px;
+    
     padding-inline: 13rem;
     padding-block: 0.7rem;
-    row-gap: 22px;
     font-size: 13px;
 }
 
@@ -35,58 +59,48 @@ nav * a{
     color: black;
 }
 
-.ubicacion {
-    grid-row-start: 2;
-    text-align: center;
-    padding-left: 1rem;
+.input-group > input::placeholder {
+    color: rgba(0, 0, 0, 0.25);    
+    font-size: 15px;
+    border-right: 1px solid #E6E6E6;
 }
 
-form > input {
-    width: 598px;
-    height: 39px;
-    padding: 1rem;
-    border: none;
-    box-shadow: 0px 1px rgba(0, 0, 0, 0.1), 0px -1px 2px rgba(0, 0, 0, 0.1);
-    border-right: transparent 1px solid #E6E6E6;
-
-}
-
-input::placeholder {
-    color: rgba(0, 0, 0, 0.25);    font-size: 15px;
-    line-height: 18px;
-}
-
-.input-buscar {
-    display: flex;
-    align-items: center;
-}
+.input-group-append > button{
+    width: 30px;
+    border-left: 1px solid #E6E6E6;}
 
 .login {
-    grid-row-start: 2;
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    gap: 3px;
     padding-inline-end: 2rem;
 }
 
-.navbar {
-    grid-row-start: 2;    
-}
 
 .navbar-list{
-    display: flex;
-    justify-content: space-between;
     color: rgba(51, 51, 51, 0.6);
-    padding-inline-end: 6rem;
+    padding-inline-end: 12rem;
+    gap: 1.2rem;
 } 
 
-a > img{
+/*Sección novedades*/
+
+.novedades {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.novedades > img {
+    position: absolute;
+    margin-bottom: 1rem;
+}
+
+.img-novedades {
     width: 100vw;
 }
 article {
     padding-inline: 13rem;
 }
+
+/*Sección Pagos*/
 
 .pagos {
     display: flex;
@@ -103,6 +117,7 @@ article {
 .items-pagos {
     display: flex;
     align-items: center;
+    
 }
 
 .items-pagos:last-child {
@@ -112,21 +127,24 @@ article {
 }
 
 .texto-pagos{
-    margin-left: 1rem;
+    
+}
+
+.texto-pagos>p{
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 0;
     
 }
 
 .texto-pagos > a {
+    
     font-size: 13px;
-    line-height: 15px;
     color: #3483FA;
     text-decoration: none;
 }
 
-
-.ofertas {
-    padding-block: 2rem;
-}
+/* Sección Ofertas*/
 
 .ofertas > h2 {
     padding-bottom: 1rem;
@@ -134,14 +152,12 @@ article {
 .list-cards {
     display: flex;
     flex-direction:row;   
+    justify-content: space-between;
     width: 100%; 
 }
 
 .card {
     height: 350px;
-    display: flex;
-    flex-direction:column;
-    margin-right: 1rem;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -154,6 +170,12 @@ article {
     flex-direction: column;
     padding: 1rem;
     border-top: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.precios {
+    display: flex;
+    
+    align-items: center;
 }
 
 .precios > span:first-child {
@@ -174,17 +196,18 @@ article {
 }
 
 .envio > p {
-    padding-top: .5rem;
+    padding-top: .3rem;
     padding-right: .3rem;
     color: #00A650;
     font-weight: 600;
     font-size: 13px;
-    line-height: 16px;
 }
 
 .envio > svg {
     margin-top: .3rem;
 }
+
+/* Sección Suscripción*/
 
 .suscripcion {
     margin-top: 3.5rem;
@@ -239,20 +262,18 @@ article {
     padding-top: 1.5rem;
 }
 
-
-
 .suscripcion-election {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 2rem;
+    padding-block: 1.5rem;
 }
 
 
 .suscripcion-container > p{
     padding-left: 1.5rem;
     font-size: 17px;
-    line-height: 18px;
+    margin-bottom: 0;
 }
 
 .suscripcion-tipos {
@@ -261,10 +282,12 @@ article {
     padding-right: 5rem;
 } 
 .suscripcion-tipos > p {
+    margin-bottom: 0;
     font-size: 15px;
     line-height: 16px;
     padding-left: 17px;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: justify;
     color: #000000;
@@ -296,7 +319,11 @@ article {
     border: none;
     padding-inline: 24px;
     padding-block: 13px;
+    cursor: pointer;
 }
+
+/*Sección Beneficios puntos*/
+
 .list-puntos {
     display: flex;
 }
@@ -313,41 +340,23 @@ article {
     flex-direction: column;
 }
 
-.title-section{
-    display: flex;
-    align-items: center;
-    padding-top: 3.5rem;
-    padding-bottom: 1rem;
-}
-
-.title-section > a {
-    padding-left: 1rem;
-    padding-bottom: 0.2rem;
-    align-self: end;
-    color: #3483FA;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 19px;
-    text-decoration: none;
-}
-
-.title-section > h2 {
-
-    font-weight:300;
-    font-size: 25px;
-    line-height: 31px;
-    color: #666666;
-}
+/*Sección Descubre */
 
 .descubre-list {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
-.descubre  > h2 {
-    padding-top: 3.5rem;
-    padding-bottom: 1rem;
+a > img{
+    width: auto;
 }
+
+.descubre-item  > img {
+    cursor: pointer;
+}
+
+/*Sección Tiendas*/
 
 .tiendas-list {
     display: flex;
@@ -385,11 +394,26 @@ article {
 }
 
 .product-container > h3 {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 2.5rem;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 27px;
+}
+
+.product-items > a > img{
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .product-container > a {
     padding-top: 1rem;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #999999;
+    text-decoration: none;
 }
 
 .product-container{
@@ -400,6 +424,14 @@ article {
     align-items: center;
 }
 
+.title-section > h2 > span{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+
+/* Sección Colecciones */
+
 .colecciones-list {
     display: flex;
     flex-direction: row;
@@ -409,8 +441,15 @@ article {
 .items-colecciones{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    column-gap: 1rem;
+    row-gap: 0.8rem ;
 }
+
+.items-colecciones > a > img {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Categorías populares*/
 
 .lista-categorias {
     background-color: #FFFFFF;
@@ -429,10 +468,12 @@ article {
 }
 
 .items-categorias > p {
-    text-align: center;
+    text-align:center;
     font-size: 14px;
     line-height: 16px;
     padding-top: 1rem;
+    padding-inline: 1rem;
+    margin-bottom: 0;
 }
 
 .lista-categorias {
@@ -445,36 +486,57 @@ article {
 
 }
 
+/* Sección beneficios mercado */
+
 .beneficios-mercado {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding-top: 0;
     background: #FFFFFF;
     height: 300px;
+    padding-inline: 13rem;
 }
 
 .items-beneficios {
     text-align: center;
 }
+
 .items-beneficios > p{
-    padding-block: 1rem;
+    padding-block: 0.5rem;
     font-size: 15px;
     line-height: 18px;
-    width: 280px;
-    text-indent: 50%;
-}
-.items-beneficios > svg{
-    margin-top: 1rem;
-}
-.items-beneficios > h3{
-    padding-top: 1rem;
+    color: #999999;
+    padding-inline: 2.3rem;
+    margin-bottom: 0;
 }
 
+
+
+.items-beneficios > svg{
+    margin-top: 4rem;
+}
+.items-beneficios > h3{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    padding-top: 1rem;
+    color: #4B4B4B;
+    margin-bottom: 0;
+}
+
+.items-beneficios > a {
+    font-size: 13px;
+    line-height: 15px;
+    color: #3483FA;
+    text-decoration: none;
+}
+
+
+/* Sección footer*/
 
 footer {
     height: 156px;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
     padding-inline: 13rem;
     background: #FFFFFF;
     border-top: 1px solid #E6E6E6;
@@ -496,6 +558,7 @@ footer {
     font-size: 12px;
     line-height: 13px;
     color: #333333;
+    margin-bottom: 0;
 }
 
 .copy-footer{
@@ -507,6 +570,8 @@ footer {
     font-size: 11px;
     line-height: 13px;
     color: #999999;
+    margin-bottom: 0;
+
 }
 
 .pngs-footer {
