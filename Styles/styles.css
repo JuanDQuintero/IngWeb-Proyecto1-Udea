@@ -352,7 +352,56 @@ a > img{
     width: auto;
 }
 
+.descubre-item{
+    display: flex;
+    justify-content: space-between;
+    width: 584px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-weight: 600;
+
+}
+
+.descubre-texto > h3 {
+    font-size: 28px;
+    line-height: 31px;
+    color: #4B4B4B;
+    text-transform: uppercase;
+}
+
+.descubre-texto > p {
+    font-size: 12px;
+    line-height: 12px;
+    color: #4B4B4B;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}	
+
+.descubre-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.descubre-texto > button{
+    background: #3483FA;
+    width: 96px;
+    height: 36px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1px;
+}
+
 .descubre-item  > img {
+    height: 100%;
+    border-radius: 4px;
     cursor: pointer;
 }
 
